@@ -33,7 +33,7 @@ jobs:
            cmd: install # will run `yarn install` command
           
     - name: Install surge
-      run: nps install --global surge
+      run: npm install --global surge
       
     - name: Deploy to surge
       run: surge ./build project003-memon.surge.sh --token ${{ secrets.SURGE_TOKEN }}
