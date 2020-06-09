@@ -36,4 +36,4 @@ jobs:
       run: npm install --global surge
       
     - name: Deploy to surge
-      run: surge ./build project003-amemon.surge.sh --token${{ secrets.SURGE_TOKEN1 }}
+      run: surge ./ project003-amemon.surge.sh --token${{ secrets.SURGE_TOKEN1 }}
